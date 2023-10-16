@@ -8,13 +8,15 @@ const Light = ({name, state}) => {
     const [vypinac, setVypinac] = useState(state)
 
     const handleClick = () => {
-        setVypinac(!state)
+        setVypinac(
+            vypinac === 'on' ? 'off' : 'on'
+        )
     }
 
     return (
         <div className="light" onClick={handleClick}>
             <div className="light__icon">
-                <img src={vypinac ? lightOn : lightOff} />
+                <img src={vypinac === 'on' ? lightOn : lightOff} />
             </div>
             <div className="light__name">
                 {name}
