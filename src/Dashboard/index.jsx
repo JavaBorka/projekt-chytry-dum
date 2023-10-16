@@ -1,10 +1,10 @@
 import React from "react";
 import './style.css'
 
-const Dashboard = () => {
+const Dashboard = ({data}) => {
     
     return (
-        <main class="dashboard">
+        <main className="dashboard">
         </main>
     )
 }

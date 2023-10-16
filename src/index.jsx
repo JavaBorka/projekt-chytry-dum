@@ -5,11 +5,13 @@ import Header from './Header'
 import Dashboard from './Dashboard'
 import './style.css';
 
+const dataAplikace = smartHomeData
+
 const App = () => (
   <>
     <div className="container">
       <Header title="Chytrý dům" />
-      <Dashboard />
+      <Dashboard data={dataAplikace} />
     </div>
   </>
 );
